@@ -1,6 +1,6 @@
-/* General Styles */
+/* General Styling */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f9;
@@ -11,85 +11,72 @@ h1, h2, h3 {
   color: #0056b3;
 }
 
-.container {
-  display: flex;
-  height: 100vh;
-  overflow: hidden;
-}
-
-/* Sidebar */
-.sidebar {
-  width: 250px;
-  background-color: #0056b3;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-.sidebar .logo img {
-  width: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.sidebar h2 {
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
-.sidebar p {
-  font-size: 0.9rem;
-}
-
-/* Main Content */
-.main-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Header and Navigation */
-.header {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-}
-
-.top-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.top-nav ul li {
-  margin: 0 15px;
-}
-
-.top-nav ul li a {
+a {
   text-decoration: none;
-  color: #ffcc00;
-  font-weight: bold;
+  color: white;
 }
 
-.top-nav ul li a:hover {
-  color: #ffffff;
-}
-
-.hero {
+/* Header Styling */
+.header {
+  background-color: #000;
+  color: white;
   text-align: center;
   padding: 20px;
-  background: linear-gradient(to right, #0056b3, #ffcc00);
-  border-radius: 10px;
-  margin: 10px;
 }
 
-/* Content Sections */
+.header .logo img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.header h1 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+}
+
+.header p {
+  font-size: 1rem;
+}
+
+/* Topbar Navigation */
+.topbar {
+  background-color: #0056b3;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.topbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.topbar ul li {
+  display: inline;
+}
+
+.topbar ul li a {
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.topbar ul li a:hover {
+  background-color: #ffcc00;
+  color: #000;
+  border-radius: 5px;
+}
+
+/* Content Section */
+main {
+  padding: 20px;
+}
+
 .content-section {
-  margin: 20px;
+  margin: 20px 0;
   padding: 20px;
   background: white;
   border-radius: 10px;
@@ -104,9 +91,9 @@ h1, h2, h3 {
 /* Footer */
 footer {
   text-align: center;
+  padding: 10px;
   background-color: #333;
   color: white;
-  padding: 10px;
 }
 
 footer img {
