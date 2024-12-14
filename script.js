@@ -1,3 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('Welcome to the T2 website!');
+  console.log('T2 Official Website Loaded Successfully!');
 });
+

@@ -1,6 +1,6 @@
-/* General Styling */
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f9;
@@ -13,80 +13,104 @@ h1, h2, h3 {
 
 .container {
   display: flex;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* Sidebar */
 .sidebar {
   width: 250px;
-  background: #0056b3;
+  background-color: #0056b3;
   color: white;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
 .sidebar .logo img {
-  max-width: 100%;
-  height: auto;
+  width: 100px;
   border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-.sidebar nav ul {
-  list-style: none;
-  padding: 0;
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
 }
 
-.sidebar nav ul li {
-  margin: 20px 0;
-}
-
-.sidebar nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.sidebar nav ul li a:hover {
-  color: #ffcc00;
+.sidebar p {
+  font-size: 0.9rem;
 }
 
 /* Main Content */
-main {
+.main-content {
   flex: 1;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header and Navigation */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav ul li {
+  margin: 0 15px;
+}
+
+.top-nav ul li a {
+  text-decoration: none;
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.top-nav ul li a:hover {
+  color: #ffffff;
 }
 
 .hero {
-  background: linear-gradient(to right, #0056b3, #ffcc00);
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
   text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #0056b3, #ffcc00);
+  border-radius: 10px;
+  margin: 10px;
 }
 
+/* Content Sections */
 .content-section {
-  margin: 20px 0;
-  padding: 15px;
-  background: #ffffff;
-  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 20px;
+  background: white;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .content-section img, .content-section video {
-  max-width: 100%;
+  width: 100%;
   border-radius: 10px;
 }
 
+/* Footer */
 footer {
   text-align: center;
-  padding: 10px;
-  background: #333;
+  background-color: #333;
   color: white;
-  margin-top: 20px;
+  padding: 10px;
 }
 
 footer img {
-  width: 50px;
+  width: 40px;
   height: auto;
-  display: block;
-  margin: 10px auto;
+  margin-top: 10px;
 }
